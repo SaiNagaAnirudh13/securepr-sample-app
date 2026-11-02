@@ -7,3 +7,4 @@ SecurePR project for step-by-step scenarios using this repo.
 ## SecurePR Scenario A Final Tests
 
 This is a low-risk documentation-only change used to test CI-aware SecurePR approval.
+hi
