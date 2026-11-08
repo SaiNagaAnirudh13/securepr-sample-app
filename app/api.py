@@ -1,6 +1,9 @@
 """A tiny Flask-style sample API used to demonstrate SecurePR's impact simulator."""
 
 
+from app.db import get_user_status
+
+
 def get_status():
     return {
         "status": "ok",
@@ -16,3 +19,15 @@ def get_service_info():
         "environment": "test",
         "healthy": True,
     }
+
+
+"""A tiny Flask-style sample API used to demonstrate SecurePR's impact simulator."""
+
+
+def get_status():
+    return {"status": "ok"}
+
+
+def get_account_status(user_id: int):
+    """Return account status information for an API consumer."""
+    return get_user_status(user_id)
